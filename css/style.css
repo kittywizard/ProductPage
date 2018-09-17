@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+
+.logo-header {
+    width: 10%;
+    height: 100px;
+    background-color: #8accc3;
+    /* have this one take up 1 unit to 2 for the nav
+        then this needs to float left */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+
+/* nav stuff */
+
+nav a:hover {
+    color: #999999;
+    font-weight: 400;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+li {
+    list-style: none;
+}
