@@ -10,8 +10,6 @@ body {
     width: 10%;
     height: 100px;
     background-color: #8accc3;
-    /* have this one take up 1 unit to 2 for the nav
-        then this needs to float left */
 }
 
 header {
@@ -26,19 +24,43 @@ a {
     font-weight: 700;
 }
 
+/*media query for mobile devices */ 
+/* header */
 
-/* nav stuff */
+  @media (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .logo-header {
+        flex-shrink: 2;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+    }
+    
+  }
+
+/* nav  */
 
 nav a:hover {
     color: #999999;
     font-weight: 400;
 }
 
-ul {
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 li {
     list-style: none;
+    padding: .25em;
 }
